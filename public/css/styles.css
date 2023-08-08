@@ -1,0 +1,224 @@
+/* styles.css */
+
+body {
+    background-color: #f0efe9;
+    margin: 0;
+    padding: 0;
+}
+
+.main-div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.sub-main-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-div {
+    display: none;
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 40px;
+}
+
+.title{
+    padding-bottom: 10px;
+}
+
+.hr-div{
+    position: absolute;
+    top: 110px;
+}
+
+.hr-2{
+    position: absolute;
+    top: 180px;
+}
+
+.year, .month,.day{
+    display: inline;
+}
+
+.day{
+    font-size: 40px;
+    font-weight: 500;
+}
+.month{
+    position: relative;
+    right: 37.5px;
+    bottom: 15px;
+}
+
+
+.today-div{
+    align-self: flex-start;
+    padding-left: 40px;
+}
+
+
+.show-day-p{
+    font-size: 25px;
+    font-weight: 450;
+    position: absolute;
+    top:150px;
+    left: 875px;
+}
+
+
+
+.taskss ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.taskss li {
+    display: flex;
+    margin-bottom: 5px; /* Reduce vertical space between tasks */
+    
+}
+
+.taskss input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #6fb6d8; /* New soft blue color */
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px; /* Add some space between checkbox and task label */
+}
+
+.taskss input[type="checkbox"]:checked::before {
+    font-size: 14px;
+    color: #6fb6d8; /* New soft blue color */    ;
+    position: absolute;
+    top: 1px;
+    left: 4px;
+}
+
+.each-task{
+    margin-bottom: -10px;
+}
+
+.taskss {
+    font-size: 20px;
+    margin-top: 20px; /* Add some space between show-date-div and tasks */
+    align-self: flex-start;
+    padding-left: 40px;
+}
+
+
+
+.form-label {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #3acce1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-div {
+    display: none;
+    background-color: #f0efe9; /* Update background color to match the design */
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.form-div .form-label {
+    margin-bottom: 10px;
+}
+
+.form-div .form-control {
+    margin-bottom: 10px;
+}
+
+.form-div .btn-primary {
+    width: 100%;
+}
+
+/* Update the button style */
+.show-form-button {
+    position: relative;
+    top: 44px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #6fb6d8; /* Update the button color */
+    color: #fff; /* Update the button text color */
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.each-task {
+    position: relative;
+}
+
+.task-label {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Style the cancel task */
+.task-cancelled .task-label {
+    text-decoration: line-through;
+    color: #d3d3d3;
+}
+
+/* Add styles for anchor tag */
+a {
+    color: #3acce1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #1c8bbf;
+}
+
+.show-form-button:hover {
+    background-color: #5b9ebe; /* Slightly darker shade of the new soft blue color */
+    /* ... (existing styles) ... */
+}
+
+.toggle-link{
+    position: relative;
+    top: 40px;
+}
