@@ -29,13 +29,13 @@
             </div>
 
             <div class="today-div">
-                <p class="day">08</p>
-                <p class="year">2023</p>
-                <p class="month">AUG</p>
+                <p class="day"></p>
+                <p class="year"></p>
+                <p class="month"></p>
             </div>
 
             <div class="show-day">
-                <p class="show-day-p">FRIDAY</p>
+                <p class="show-day-p"></p>
             </div>
 
             <div class="hr-2">
@@ -90,6 +90,27 @@
             $(this).parent().toggleClass("task-cancelled");
         });
     </script>
+<script>
+    var datetime = new Date();
+    
+    // Array of month names
+    var months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+    
+    // Array of day names
+    var days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
+    
+    // Get current date components
+    var currentDay = datetime.getDate();
+    var currentMonth = datetime.getMonth();
+    var currentYear = datetime.getFullYear();
+    var currentDayName = days[datetime.getDay()];
+    
+    // Update the elements with current date and day
+    document.getElementById('currentDay').innerText = currentDay;
+    document.getElementById('currentMonth').innerText = months[currentMonth];
+    document.getElementById('currentYear').innerText = currentYear;
+    document.getElementById('currentDayName').innerText = currentDayName;
+</script>
 
 
 </body>
